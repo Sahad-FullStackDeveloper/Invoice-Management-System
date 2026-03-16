@@ -1,0 +1,47 @@
+.sidebar{
+width:189px;
+height:100vh;
+background:#05102f;
+color:white;
+padding:20px 0;
+position:fixed;
+left:0;
+top:0;
+display:flex;
+flex-direction:column;
+
+}
+
+.sidebar h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+.sidebar li{
+margin:20px 0;
+}
+
+.sidebar a{
+display:block;
+padding:12px 20px;
+color:white;
+text-decoration:none;
+transition:0.3s;
+}
+
+.sidebar a:hover{
+background:#334155;
+padding-left:25px;
+}
+
+.content{
+margin-left:220px;
+padding:30px;
+flex:1;
+}

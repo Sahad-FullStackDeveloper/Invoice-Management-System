@@ -1,0 +1,131 @@
+/* .login-container{
+  width:350px;
+  margin:120px auto;
+  padding:25px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  text-align:center;
+   animation: fadeIn 0.6s ease-in-out;
+}
+
+.login-container h2{
+  margin-bottom:20px;
+}
+
+.login-container input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+.login-container button{
+  width:100%;
+  padding:10px;
+  background:#2563eb;
+  color:white;
+  border:none;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+.login-container button:hover{
+  background:#1d4ed8;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+} */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:linear-gradient(135deg,#1e3a8a,#2563eb,#38bdf8);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+/* LOGIN CARD */
+
+.login-container{
+  margin-top: 100px;
+  margin-left: 280px ;
+width:360px;
+padding:35px;
+background:rgba(255,255,255,0.95);
+border-radius:14px;
+box-shadow:0 15px 40px rgba(0,0,0,0.25);
+text-align:center;
+animation:fadeIn 0.6s ease-in-out;
+}
+
+/* TITLE */
+
+.login-container h2{
+margin-bottom:25px;
+color:#1e293b;
+}
+
+/* INPUTS */
+
+.login-container input{
+width:80%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:14px;
+transition:0.25s;
+}
+
+.login-container input:focus{
+outline:none;
+border-color:#2563eb;
+box-shadow:0 0 5px rgba(37,99,235,0.3);
+}
+
+/* BUTTON */
+
+.login-container button{
+width:40%;
+padding:12px;
+margin-top:10px;
+background:linear-gradient(135deg,#2563eb,#3b82f6);
+color:white;
+border:none;
+border-radius:8px;
+font-size:15px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-container button:hover{
+transform:translateY(-2px);
+box-shadow:0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

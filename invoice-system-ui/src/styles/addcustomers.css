@@ -1,0 +1,64 @@
+
+.page-wrapper {
+  margin: 0;
+  padding: 0;
+  background: #f4f7f6; 
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.create-invoice-box {
+  background: #ffffff;
+  padding: 40px;
+  width: 90%;
+  max-width: 400px; 
+  border-radius: 15px;
+  border: 2px solid #333; 
+  
+  text-align: center;
+}
+
+.create-invoice-box h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.create-invoice-box select,
+.create-invoice-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px; 
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fafafa;
+  box-sizing: border-box; 
+  transition: border-color 0.3s;
+}
+
+.create-invoice-box select:focus,
+.create-invoice-box input:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.create-invoice-box button {
+  width: 100%;
+  padding: 14px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.create-invoice-box button:hover {
+  background-color: #555;
+}

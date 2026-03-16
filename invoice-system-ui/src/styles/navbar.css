@@ -1,0 +1,41 @@
+.navbar{
+height:60px;
+background:white;
+border-radius: 50px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 30px;
+border-bottom:1px solid #2162e2;
+box-shadow:0 2px 5px rgba(0,0,0,0.05);
+}
+
+.navbar h3{
+font-size:18px;
+color:#1e293b;
+}
+
+.nav-right{
+display:flex;
+gap:15px;
+align-items:center;
+}
+
+.nav-right span{
+font-weight:500;
+color:#475569;
+}
+
+.nav-right button{
+padding:7px 14px;
+border:none;
+border-radius:5px;
+background:#ef4444;
+color:white;
+cursor:pointer;
+transition:0.3s;
+}
+
+.nav-right button:hover{
+background:#dc2626;
+}

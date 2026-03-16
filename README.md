@@ -76,7 +76,7 @@ PostgreSQL Database
 
 ⚙️ Installation Guide
 1️⃣ Clone the Repository
-git clone https://github.com/YOUR_USERNAME/invoice-management-system.git
+git clone https://github.com/Sahad_FullStackDeveloper/invoice-management-system.git
 2️⃣ Backend Setup
 
 Navigate to backend folder

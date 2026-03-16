@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Invoice Management System
 
 A full-stack Invoice and Payment Management System built using React and ASP.NET Core Web API.
@@ -144,3 +145,7 @@ invoice-system-ui/
 
 📌 Author
 Developed by Sahad KV
+=======
+# Invoice-Management-System
+Full-stack Invoice Management System built with React, .NET Core API, and PostgreSQL. Features a responsive UI with custom CSS layered shadows, secure JWT authentication, and robust data persistence.
+>>>>>>> 8ff619f6773e3e3127c4185823d2b254d1ae920a

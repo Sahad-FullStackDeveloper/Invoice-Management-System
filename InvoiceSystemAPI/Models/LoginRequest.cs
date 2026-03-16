@@ -6,3 +6,9 @@ namespace InvoiceSystemAPI.Models
         public string Password{ get; set; } = "";
     }
 }
+
+// {
+//   "ConnectionStrings": {
+//     "DefaultConnection": "Host=localhost;Port=5432;Database=trailapp;Username=postgres;Password=Root"
+//   }
+// }

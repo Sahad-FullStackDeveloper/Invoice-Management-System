@@ -3,6 +3,7 @@ import axios from "axios"
 import { useParams, useNavigate } from "react-router-dom"
 import Navbar from "../components/Navbar"
 import Sidebar from "../components/Sidebar"
+import "../styles/editPayment.css"
 
 function EditPayment(){
 
@@ -51,7 +52,7 @@ return(
 
 <Navbar/>
 
-<div className="content">
+<div className="dashEdit">
 
 <h2>Edit Payment</h2>
 

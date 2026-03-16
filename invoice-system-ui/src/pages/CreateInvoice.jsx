@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
-import "../styles/createInvoice.css"
+import "../styles/createInvoice.css";
 
 function CreateInvoice() {
   const navigate = useNavigate();
@@ -43,7 +43,7 @@ function CreateInvoice() {
   };
 
   return (
-    <div>
+    <div className="gogo">
       <h2>Create Invoice</h2>
 
       <form onSubmit={handleSubmit}>

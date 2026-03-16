@@ -1,6 +1,7 @@
 import { useState } from "react"
 import API from "../services/api"
 import { useParams } from "react-router-dom"
+import "../styles/AddPayment.css"
 
 function AddPayment(){
 
@@ -36,7 +37,7 @@ console.log(err)
 
 return(
 
-<div>
+<div className="money">
 
 <h2>Add Payment</h2>
 

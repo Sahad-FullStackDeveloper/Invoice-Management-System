@@ -1,0 +1,109 @@
+.dashboard {
+  display: flex;
+background:linear-gradient(135deg,#a16a99,#0d0d0e,#09d62f);
+  min-height: 100vh;
+  margin-left: 180px;
+}
+
+.main {
+  flex: 1;
+  padding: 20px 30px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content h2 {
+  font-size: 24px;
+  color: #5a5454;
+  margin-bottom: 60px;
+}
+
+
+.editBtn {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.editBtn:hover {
+  background: #1d4ed8;
+}
+
+.deleteBtn {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  background: #dc2626;
+}
+
+.pagination {
+    margin-left: 290px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #bbb;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.paymentTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-top: -25px;
+}
+
+
+.paymentTable thead {
+  background: #111;
+  color: #fff;
+}
+
+.paymentTable th {
+  padding: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.paymentTable td {
+  color: #111;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.paymentTable tbody tr:hover {
+  background: #f9fafb;
+}
+

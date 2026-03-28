@@ -5,7 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 // first
 builder.Services.AddControllers();
 
-// for api first
+// mdle
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReact",
@@ -26,7 +26,7 @@ builder.Services.AddOpenApi();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// ppl.
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -43,23 +43,22 @@ var summaries = new[]
 
 app.MapGet("/weatherforecast", () =>
 {
-    var forecast =  Enumerable.Range(1, 5).Select(index =>
+    var forecast = Enumerable.Range(1, 5).Select(index =>
         new WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
-            summaries[Random.Shared.Next(summaries.Length)] 
+            summaries[Random.Shared.Next(summaries.Length)]
         ))
         .ToArray();
     return forecast;
 })
 .WithName("GetWeatherForecast");
 
-// second api
+
 app.UseCors("AllowReact");
 
 
-// second
 app.MapControllers();
 
 app.MapGet("/", () => "API Running");

@@ -1,29 +1,23 @@
-import "../styles/navbar.css"
+import style from "../styles/navbar.module.css";
 
-function Navbar(){
-
-  const username = localStorage.getItem("username")
+function Navbar() {
+  const username = localStorage.getItem("username");
 
   const handleLogout = () => {
-    localStorage.clear()
-    window.location.href = "/"
-  }
+    localStorage.clear();
+    window.location.href = "/";
+  };
 
-  return(
-
-    <div className="navbar">
-
+  return (
+    <div className={style.navbar}>
       <h3></h3>
 
-      <div className="nav-right">
+      <div className={style.navRight}>
         <span>Welcome, {username}</span>
         <button onClick={handleLogout}>Logout</button>
       </div>
-
     </div>
-
-  )
-
+  );
 }
 
-export default Navbar
+export default Navbar;

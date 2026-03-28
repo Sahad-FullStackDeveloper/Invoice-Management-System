@@ -1,71 +1,63 @@
-<<<<<<< HEAD
-Invoice Management System
+# Invoice Management System
 
 A full-stack Invoice and Payment Management System built using React and ASP.NET Core Web API.
 
-🚀 Tech Stack
+---
 
-Frontend
+## 🚀 Tech Stack
 
-React
+### Frontend
 
-Axios
+* React
+* Axios
+* React Router
+* CSS
 
-React Router
+### Backend
 
-CSS
+* ASP.NET Core Web API
+* Entity Framework Core
 
-Backend
+### Database
 
-ASP.NET Core Web API
+* PostgreSQL
 
-Entity Framework Core
+---
 
-Database
+## 👥 User Roles
 
-PostgreSQL
+### Admin
 
-👥 User Roles
+* Full access
+* Manage Customers, Invoices, Payments
 
-Admin
+### Sales
 
-Full access
+* Access to Customers and Invoices
+* Can create invoices
 
-Manage Customers, Invoices, Payments
+### Accountant
 
-Sales
+* Access to Payments
+* Can manage receipts
 
-Access to Customers and Invoices
+---
 
-Can create invoices
+## ✨ Features
 
-Accountant
+* User login system
+* Role-based access control
+* Customer management
+* Invoice creation and tracking
+* Payment management
+* Auto balance calculation
+* Pagination for invoices and payments
+* Dashboard statistics
+* Responsive UI
 
-Access to Payments
+---
 
-Can manage receipts
-
-✨ Features
-
-User login system
-
-Role-based access control
-
-Customer management
-
-Invoice creation and tracking
-
-Payment management
-
-Auto balance calculation
-
-Pagination for invoices and payments
-
-Dashboard statistics
-
-Responsive UI
-
-📊 Project Architecture
+## 📊 Project Architecture
 
 React Frontend
 ⬇
@@ -75,48 +67,45 @@ Entity Framework Core
 ⬇
 PostgreSQL Database
 
-⚙️ Installation Guide
-1️⃣ Clone the Repository
-git clone https://github.com/YOUR_USERNAME/invoice-management-system.git
-2️⃣ Backend Setup
+---
 
-Navigate to backend folder
+## ⚙️ Installation Guide
+
+### 1️⃣ Clone the Repository
+
+git clone https://github.com/Sahad-FullStackDeveloper/Invoice-Management-System.git
+
+---
+
+### 2️⃣ Backend Setup
 
 cd InvoiceSystemAPI
 
-Install dependencies
-
 dotnet restore
-
-Run database migrations
 
 dotnet ef database update
 
-Start backend server
-
 dotnet run
 
-Backend will run at
-
+Backend runs at:
 http://localhost:5054
-3️⃣ Frontend Setup
 
-Navigate to frontend folder
+---
+
+### 3️⃣ Frontend Setup
 
 cd invoice-system-ui
 
-Install dependencies
-
 npm install
-
-Run React app
 
 npm run dev
 
-Frontend will run at
-
+Frontend runs at:
 http://localhost:5173
-🔑 Default Login Credentials
+
+---
+
+## 🔑 Default Login Credentials
 
 Admin
 Username: admin
@@ -130,22 +119,23 @@ Accountant
 Username: accountant
 Password: accountant123
 
-📁 Project Structure
+---
+
+## 📁 Project Structure
+
 InvoiceSystemAPI/
-  Controllers/
-  Models/
-  Data/
+Controllers/
+Models/
+Data/
 
 invoice-system-ui/
-  components/
-  pages/
-  services/
-  styles/
+components/
+pages/
+services/
+styles/
 
+---
 
-📌 Author
-Developed by Sahad KV
-=======
-# Invoice-Management-System
-Full-stack Invoice Management System built with React, .NET Core API, and PostgreSQL. Features a responsive UI with custom CSS layered shadows, secure JWT authentication, and robust data persistence.
->>>>>>> 8ff619f6773e3e3127c4185823d2b254d1ae920a
+## 📌 Author
+
+Developed by **Sahad KV**

@@ -7,8 +7,8 @@ namespace InvoiceSystemAPI.Models
     }
 }
 
-// {
-//   "ConnectionStrings": {
-//     "DefaultConnection": "Host=localhost;Port=5432;Database=trailapp;Username=postgres;Password=Root"
+// { 
+//   "ConnectionStrings": { 
+//     "DefaultConnection": "Host=db.yofvghgktasdjigzikmd.supabase.co;Database=postgres;Username=postgres;Password=JIzVV50mQwu5QRWI;SSL Mode=Require;Trust Server Certificate=true" 
+//     } 
 //   }
-// }

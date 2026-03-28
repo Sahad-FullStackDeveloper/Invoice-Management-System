@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import API from "../services/api";
-import "../styles/createInvoice.css";
+import styles from "../styles/createInvoice.module.css";
 
 function CreateInvoice() {
   const navigate = useNavigate();
@@ -43,47 +43,57 @@ function CreateInvoice() {
   };
 
   return (
-    <div className="gogo">
-      <h2>Create Invoice</h2>
+    
 
-      <form onSubmit={handleSubmit}>
-        <select
-          value={customerId}
-          onChange={(e) => setCustomerId(e.target.value)}
+    <div className={styles.page}>
+      <div className={styles.header}>
+        <button
+          className={styles.backBtn}
+          onClick={() => navigate("/invoices")}
         >
-          <option value="">Select Customer</option>
+          ← Back
+        </button>
+      </div>
 
-          {customers.map((c) => (
-            <option key={c.id} value={c.id}>
-              {c.name}
-            </option>
-          ))}
-        </select>
+      <div className={styles.main}>
+        <div className={styles.container}>
+          <h2 className={styles.title}>Create Invoice</h2>
 
-        <br />
-        <br />
+          <form className={styles.form} onSubmit={handleSubmit}>
+            <select
+              className={styles.select}
+              value={customerId}
+              onChange={(e) => setCustomerId(e.target.value)}
+            >
+              <option value="">Select Customer</option>
+              {customers.map((c) => (
+                <option key={c.id} value={c.id}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
 
-        <input
-          type="number"
-          placeholder="Amount"
-          value={amount}
-          onChange={(e) => setAmount(e.target.value)}
-        />
+            <input
+              className={styles.input}
+              type="number"
+              placeholder="Amount"
+              value={amount}
+              onChange={(e) => setAmount(e.target.value)}
+            />
 
-        <br />
-        <br />
+            <input
+              className={styles.input}
+              type="date"
+              value={invoiceDate}
+              onChange={(e) => setInvoiceDate(e.target.value)}
+            />
 
-        <input
-          type="date"
-          value={invoiceDate}
-          onChange={(e) => setInvoiceDate(e.target.value)}
-        />
-
-        <br />
-        <br />
-
-        <button type="submit">Save Invoice</button>
-      </form>
+            <button className={styles.submitBtn} type="submit">
+              Save Invoice
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }

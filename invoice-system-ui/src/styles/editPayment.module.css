@@ -1,0 +1,83 @@
+
+.dashboard {
+  display: flex;
+  background:linear-gradient(135deg,#de1212,#0d0d0e,#e2ed05);;
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+  padding: 30px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.backBtn {
+  background: transparent;
+  border: none;
+  color: #666;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.backBtn:hover {
+  color: #ff6a00;
+}
+
+.dashEdit {
+  max-width: 400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.dashEdit h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.dashEdit form {
+  display: flex;
+  flex-direction: column;
+}
+
+.dashEdit input,
+.dashEdit select {
+  width: 90;
+  padding: 10px 12px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.dashEdit input:focus,
+.dashEdit select:focus {
+  outline: none;
+  border-color: #ff6a00;
+  box-shadow: 0 0 0 2px rgba(255, 106, 0, 0.1);
+}
+
+.dashEdit button {
+    margin-left: 110px;
+    width: 40%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dashEdit button:hover {
+  background: #1d4ed8;
+}

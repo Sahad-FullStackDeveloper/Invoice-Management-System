@@ -9,7 +9,7 @@ namespace InvoiceSystemAPI.Controllers
     public class CustomersController : ControllerBase
     {
         private readonly AppDbContext _context;
-
+//inj
         public CustomersController(AppDbContext context)
         {
             _context = context;
@@ -30,20 +30,20 @@ namespace InvoiceSystemAPI.Controllers
             return Ok(customer);
         }
 
-       [HttpDelete("{id}")]
-public IActionResult DeleteCustomer(int id)
-{
-    var customer = _context.Customers.Find(id);
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCustomer(int id)
+        {
+            var customer = _context.Customers.Find(id);
 
-    if (customer == null)
-    {
-        return NotFound();
-    }
+            if (customer == null)
+            {
+                return NotFound();
+            }
 
-    _context.Customers.Remove(customer);
-    _context.SaveChanges();
+            _context.Customers.Remove(customer);
+            _context.SaveChanges();
 
-    return Ok("Customer Deleted");
-}
+            return Ok("Customer Deleted");
+        }
     }
 }

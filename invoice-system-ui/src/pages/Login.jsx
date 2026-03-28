@@ -1,7 +1,7 @@
 import API from "../services/api"
 import { useState } from "react";
 import { useNavigate } from "react-router-dom"
-import "../styles/login.css"
+import styles from"../styles/login.module.css"
 
 function Login(){
     const [username, setUsername] = useState("")
@@ -21,7 +21,6 @@ function Login(){
 
     console.log("API Response:", response.data)
 
-    // save login info
     localStorage.setItem("username", response.data.username)
     localStorage.setItem("role", response.data.role)
 
@@ -36,8 +35,9 @@ function Login(){
 }
 
     return(
-        <div className="login-container">
-            <h2>Login</h2>
+      <div className={styles.loginContainerMain}>
+        <div className={styles.loginContainer}>
+            <h2>WELCOME</h2>
 
             <input
              type="text"
@@ -54,6 +54,7 @@ function Login(){
             />
 
             <button onClick={handleLogin}>Login</button>
+        </div>
         </div>
     )
 }

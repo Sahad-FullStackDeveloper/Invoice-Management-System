@@ -120,3 +120,4 @@ C:\KV\Assignment\InvoiceSystemAPI\bin\Debug\net10.0\ru\Microsoft.CodeAnalysis.Wo
 C:\KV\Assignment\InvoiceSystemAPI\bin\Debug\net10.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\KV\Assignment\InvoiceSystemAPI\bin\Debug\net10.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
 C:\KV\Assignment\InvoiceSystemAPI\bin\Debug\net10.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+C:\KV\Assignment\InvoiceSystemAPI\obj\Debug\net10.0\InvoiceSystemAPI.sourcelink.json

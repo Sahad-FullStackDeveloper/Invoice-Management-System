@@ -2,7 +2,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "../styles/Dashboard.css"
+import styles from "../styles/dashboard.module.css";
 
 function Dashboard() {
 
@@ -34,35 +34,36 @@ const fetchDashboardData = async () => {
 
   setTotalRevenue(revenue);
 };
+//2
 
   return (
-    <div className="dashboard">
+    <div className={styles.dashboard}>
       <Sidebar />
 
-      <div className="main">
+      <div className={styles.main}>
         <Navbar />
 
-        <div className="content">
+        <div className={styles.contend}>
           <h1>Dashboard</h1>
 
-          <div className="cards">
-            <div className="card">
+          <div className={styles.cards}>
+            <div className={styles.card}>
               <h3>Total Customers</h3>
               <p>{totalCustomers}</p>
             </div>
 
-            <div className="card">
-              <h3>Total Invoices</h3>
-              <p>{totalInvoices} </p>
-            </div>
-
-            <div className="card">
-              <h3>Total Payments</h3>
+             <div className={styles.card}>
+              <h3>Total   <br/> Invoices</h3>
               <p>{totalPayments} </p>
             </div>
 
-            <div className="card">
-              <h3>Total Revenue</h3>
+            <div className={styles.card}>
+              <h3>Total <br /> Payments</h3>
+              <p>{totalPayments} </p>
+            </div>
+
+            <div className={styles.card}>
+              <h3>Total <br /> Revenue</h3>
               <p> {totalRevenue} </p>
             </div>
           </div>

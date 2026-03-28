@@ -13,5 +13,8 @@ namespace InvoiceSystemAPI.Models
 
         [Column("email")]
         public string Email { get; set; } = "";
+
+        [Column("phone")]
+        public string Phone { get; set; } = "";
     }
 }

@@ -1,6 +1,6 @@
 .navbar{
 height:60px;
-background:white;
+background:rgb(243, 239, 239);
 border-radius: 50px;
 display:flex;
 justify-content:space-between;
@@ -15,18 +15,18 @@ font-size:18px;
 color:#1e293b;
 }
 
-.nav-right{
+.navRight{
 display:flex;
-gap:15px;
+gap:18px;
 align-items:center;
 }
 
-.nav-right span{
+.navRight span{
 font-weight:500;
 color:#475569;
 }
 
-.nav-right button{
+.navRight button{
 padding:7px 14px;
 border:none;
 border-radius:5px;
@@ -36,6 +36,6 @@ cursor:pointer;
 transition:0.3s;
 }
 
-.nav-right button:hover{
+.navRight button:hover{
 background:#dc2626;
 }

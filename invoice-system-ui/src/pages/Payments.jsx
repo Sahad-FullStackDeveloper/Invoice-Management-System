@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
+import styles from "../styles/payments.module.css";
 
 function Payments() {
   const [payments, setPayments] = useState([]);
@@ -38,16 +39,16 @@ function Payments() {
   };
 
   return (
-    <div className="dashboard">
+    <div className={styles.dashboard}>
       <Sidebar />
 
-      <div className="main">
+      <div className={styles.main}>
         <Navbar />
 
-        <div className="content">
+        <div className={styles.content}>
           <h2>Payments</h2>
 
-          <table border="1">
+          <table className={styles.paymentTable}>
             <thead>
               <tr>
                 <th>Receipt No</th>
@@ -63,7 +64,7 @@ function Payments() {
             <tbody>
               {paginatedPayments.map((p, index) => (
                 <tr key={p.id}>
-                  <td>{"RCPT-" + String(index + 1).padStart(3, "0")}</td>
+                  <td>REC-{start + index + 1}</td>
 
                   <td>{p.paymentDate}</td>
                   <td>{p.invoiceId}</td>
@@ -83,12 +84,12 @@ function Payments() {
             </tbody>
           </table>
 
-          <div style={{ marginTop: "20px" }}>
+          <div className={styles.pagination}>
             <button onClick={() => setPage(page - 1)} disabled={page === 1}>
               Prev
             </button>
 
-            <span style={{ margin: "0 10px" }}>Page {page}</span>
+            <span>Page {page}</span>
 
             <button
               onClick={() => setPage(page + 1)}
